@@ -1,0 +1,13 @@
+TEMPLATE = app
+CONFIG += console
+CONFIG -= app_bundle
+CONFIG -= qt
+
+QMAKE_CXXFLAGS -= -O1
+QMAKE_CXXFLAGS -= -O2
+QMAKE_CXXFLAGS -= -O3
+QMAKE_CXXFLAGS += -O0
+QMAKE_CXXFLAGS += -std=c++11
+
+SOURCES += main.cpp
+
